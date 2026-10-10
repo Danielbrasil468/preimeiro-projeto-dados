@@ -1,0 +1,201 @@
+id_venda,data,produto,categoria,regiao,quantidade,preco_unitario
+1,2025-01-01,X-Burger,Lanche,Nordeste,2,22.90
+13,2025-01-02,Batata frita,Acompanhamento,Centro-Oeste,1,12.90
+25,2025-01-03,Milkshake,Sobremesa,Sudeste,5,16.90
+37,2025-01-04,Brownie,Sobremesa,Sul,4,11.50
+49,2025-01-05,X-Bacon,Lanche,Norte,3,29.90
+61,2025-01-06,Refrigerante,Bebida,Nordeste,2,6.90
+73,2025-01-07,Suco natural,Bebida,Centro-Oeste,1,9.50
+85,2025-01-08,X-Burger,Lanche,Sudeste,5,22.90
+97,2025-01-09,Batata frita,Acompanhamento,Sul,4,12.90
+109,2025-01-10,Milkshake,Sobremesa,Norte,3,16.90
+121,2025-01-11,Brownie,Sobremesa,Nordeste,2,11.50
+133,2025-01-12,X-Bacon,Lanche,Centro-Oeste,1,29.90
+145,2025-01-13,Refrigerante,Bebida,Sudeste,5,6.90
+157,2025-01-14,Suco natural,Bebida,Sul,4,9.50
+169,2025-01-15,X-Burger,Lanche,Norte,3,22.90
+181,2025-01-16,Batata frita,Acompanhamento,Nordeste,2,12.90
+193,2025-01-17,Milkshake,Sobremesa,Centro-Oeste,1,16.90
+2,2025-02-01,Refrigerante,Bebida,Norte,5,6.90
+14,2025-02-02,Suco natural,Bebida,Nordeste,4,9.50
+26,2025-02-03,X-Burger,Lanche,Centro-Oeste,3,22.90
+38,2025-02-04,Batata frita,Acompanhamento,Sudeste,2,12.90
+50,2025-02-05,Milkshake,Sobremesa,Sul,1,16.90
+62,2025-02-06,Brownie,Sobremesa,Norte,5,11.50
+74,2025-02-07,X-Bacon,Lanche,Nordeste,4,29.90
+86,2025-02-08,Refrigerante,Bebida,Centro-Oeste,3,6.90
+98,2025-02-09,Suco natural,Bebida,Sudeste,2,9.50
+110,2025-02-10,X-Burger,Lanche,Sul,1,22.90
+122,2025-02-11,Batata frita,Acompanhamento,Norte,5,12.90
+134,2025-02-12,Milkshake,Sobremesa,Nordeste,4,16.90
+146,2025-02-13,Brownie,Sobremesa,Centro-Oeste,3,11.50
+158,2025-02-14,X-Bacon,Lanche,Sudeste,2,29.90
+170,2025-02-15,Refrigerante,Bebida,Sul,1,6.90
+182,2025-02-16,Suco natural,Bebida,Norte,5,9.50
+194,2025-02-17,X-Burger,Lanche,Nordeste,4,22.90
+3,2025-03-01,Brownie,Sobremesa,Sul,3,11.50
+15,2025-03-02,X-Bacon,Lanche,Norte,2,29.90
+27,2025-03-03,Refrigerante,Bebida,Nordeste,1,6.90
+39,2025-03-04,Suco natural,Bebida,Centro-Oeste,5,9.50
+51,2025-03-05,X-Burger,Lanche,Sudeste,4,22.90
+63,2025-03-06,Batata frita,Acompanhamento,Sul,3,12.90
+75,2025-03-07,Milkshake,Sobremesa,Norte,2,16.90
+87,2025-03-08,Brownie,Sobremesa,Nordeste,1,11.50
+99,2025-03-09,X-Bacon,Lanche,Centro-Oeste,5,29.90
+111,2025-03-10,Refrigerante,Bebida,Sudeste,4,6.90
+123,2025-03-11,Suco natural,Bebida,Sul,3,9.50
+135,2025-03-12,X-Burger,Lanche,Norte,2,22.90
+147,2025-03-13,Batata frita,Acompanhamento,Nordeste,1,12.90
+159,2025-03-14,Milkshake,Sobremesa,Centro-Oeste,5,16.90
+171,2025-03-15,Brownie,Sobremesa,Sudeste,4,11.50
+183,2025-03-16,X-Bacon,Lanche,Sul,3,29.90
+195,2025-03-17,Refrigerante,Bebida,Norte,2,6.90
+4,2025-04-01,Batata frita,Acompanhamento,Sudeste,1,12.90
+16,2025-04-02,Milkshake,Sobremesa,Sul,5,16.90
+28,2025-04-03,Brownie,Sobremesa,Norte,4,11.50
+40,2025-04-04,X-Bacon,Lanche,Nordeste,3,29.90
+52,2025-04-05,Refrigerante,Bebida,Centro-Oeste,2,6.90
+64,2025-04-06,Suco natural,Bebida,Sudeste,1,9.50
+76,2025-04-07,X-Burger,Lanche,Sul,5,22.90
+88,2025-04-08,Batata frita,Acompanhamento,Norte,4,12.90
+100,2025-04-09,Milkshake,Sobremesa,Nordeste,3,16.90
+112,2025-04-10,Brownie,Sobremesa,Centro-Oeste,2,11.50
+124,2025-04-11,X-Bacon,Lanche,Sudeste,1,29.90
+136,2025-04-12,Refrigerante,Bebida,Sul,5,6.90
+148,2025-04-13,Suco natural,Bebida,Norte,4,9.50
+160,2025-04-14,X-Burger,Lanche,Nordeste,3,22.90
+172,2025-04-15,Batata frita,Acompanhamento,Centro-Oeste,2,12.90
+184,2025-04-16,Milkshake,Sobremesa,Sudeste,1,16.90
+196,2025-04-17,Brownie,Sobremesa,Sul,5,11.50
+5,2025-05-01,Suco natural,Bebida,Centro-Oeste,4,9.50
+17,2025-05-02,X-Burger,Lanche,Sudeste,3,22.90
+29,2025-05-03,Batata frita,Acompanhamento,Sul,2,12.90
+41,2025-05-04,Milkshake,Sobremesa,Norte,1,16.90
+53,2025-05-05,Brownie,Sobremesa,Nordeste,5,11.50
+65,2025-05-06,X-Bacon,Lanche,Centro-Oeste,4,29.90
+77,2025-05-07,Refrigerante,Bebida,Sudeste,3,6.90
+89,2025-05-08,Suco natural,Bebida,Sul,2,9.50
+101,2025-05-09,X-Burger,Lanche,Norte,1,22.90
+113,2025-05-10,Batata frita,Acompanhamento,Nordeste,5,12.90
+125,2025-05-11,Milkshake,Sobremesa,Centro-Oeste,4,16.90
+137,2025-05-12,Brownie,Sobremesa,Sudeste,3,11.50
+149,2025-05-13,X-Bacon,Lanche,Sul,2,29.90
+161,2025-05-14,Refrigerante,Bebida,Norte,1,6.90
+173,2025-05-15,Suco natural,Bebida,Nordeste,5,9.50
+185,2025-05-16,X-Burger,Lanche,Centro-Oeste,4,22.90
+197,2025-05-17,Batata frita,Acompanhamento,Sudeste,3,12.90
+6,2025-06-01,X-Bacon,Lanche,Nordeste,2,29.90
+18,2025-06-02,Refrigerante,Bebida,Centro-Oeste,1,6.90
+30,2025-06-03,Suco natural,Bebida,Sudeste,5,9.50
+42,2025-06-04,X-Burger,Lanche,Sul,4,22.90
+54,2025-06-05,Batata frita,Acompanhamento,Norte,3,12.90
+66,2025-06-06,Milkshake,Sobremesa,Nordeste,2,16.90
+78,2025-06-07,Brownie,Sobremesa,Centro-Oeste,1,11.50
+90,2025-06-08,X-Bacon,Lanche,Sudeste,5,29.90
+102,2025-06-09,Refrigerante,Bebida,Sul,4,6.90
+114,2025-06-10,Suco natural,Bebida,Norte,3,9.50
+126,2025-06-11,X-Burger,Lanche,Nordeste,2,22.90
+138,2025-06-12,Batata frita,Acompanhamento,Centro-Oeste,1,12.90
+150,2025-06-13,Milkshake,Sobremesa,Sudeste,5,16.90
+162,2025-06-14,Brownie,Sobremesa,Sul,4,11.50
+174,2025-06-15,X-Bacon,Lanche,Norte,3,29.90
+186,2025-06-16,Refrigerante,Bebida,Nordeste,2,6.90
+198,2025-06-17,Suco natural,Bebida,Centro-Oeste,1,9.50
+7,2025-07-01,Milkshake,Sobremesa,Norte,5,16.90
+19,2025-07-02,Brownie,Sobremesa,Nordeste,4,11.50
+31,2025-07-03,X-Bacon,Lanche,Centro-Oeste,3,29.90
+43,2025-07-04,Refrigerante,Bebida,Sudeste,2,6.90
+55,2025-07-05,Suco natural,Bebida,Sul,1,9.50
+67,2025-07-06,X-Burger,Lanche,Norte,5,22.90
+79,2025-07-07,Batata frita,Acompanhamento,Nordeste,4,12.90
+91,2025-07-08,Milkshake,Sobremesa,Centro-Oeste,3,16.90
+103,2025-07-09,Brownie,Sobremesa,Sudeste,2,11.50
+115,2025-07-10,X-Bacon,Lanche,Sul,1,29.90
+127,2025-07-11,Refrigerante,Bebida,Norte,5,6.90
+139,2025-07-12,Suco natural,Bebida,Nordeste,4,9.50
+151,2025-07-13,X-Burger,Lanche,Centro-Oeste,3,22.90
+163,2025-07-14,Batata frita,Acompanhamento,Sudeste,2,12.90
+175,2025-07-15,Milkshake,Sobremesa,Sul,1,16.90
+187,2025-07-16,Brownie,Sobremesa,Norte,5,11.50
+199,2025-07-17,X-Bacon,Lanche,Nordeste,4,29.90
+8,2025-08-01,X-Burger,Lanche,Sul,3,22.90
+20,2025-08-02,Batata frita,Acompanhamento,Norte,2,12.90
+32,2025-08-03,Milkshake,Sobremesa,Nordeste,1,16.90
+44,2025-08-04,Brownie,Sobremesa,Centro-Oeste,5,11.50
+56,2025-08-05,X-Bacon,Lanche,Sudeste,4,29.90
+68,2025-08-06,Refrigerante,Bebida,Sul,3,6.90
+80,2025-08-07,Suco natural,Bebida,Norte,2,9.50
+92,2025-08-08,X-Burger,Lanche,Nordeste,1,22.90
+104,2025-08-09,Batata frita,Acompanhamento,Centro-Oeste,5,12.90
+116,2025-08-10,Milkshake,Sobremesa,Sudeste,4,16.90
+128,2025-08-11,Brownie,Sobremesa,Sul,3,11.50
+140,2025-08-12,X-Bacon,Lanche,Norte,2,29.90
+152,2025-08-13,Refrigerante,Bebida,Nordeste,1,6.90
+164,2025-08-14,Suco natural,Bebida,Centro-Oeste,5,9.50
+176,2025-08-15,X-Burger,Lanche,Sudeste,4,22.90
+188,2025-08-16,Batata frita,Acompanhamento,Sul,3,12.90
+200,2025-08-17,Milkshake,Sobremesa,Norte,2,16.90
+9,2025-09-01,Refrigerante,Bebida,Sudeste,1,6.90
+21,2025-09-02,Suco natural,Bebida,Sul,5,9.50
+33,2025-09-03,X-Burger,Lanche,Norte,4,22.90
+45,2025-09-04,Batata frita,Acompanhamento,Nordeste,3,12.90
+57,2025-09-05,Milkshake,Sobremesa,Centro-Oeste,2,16.90
+69,2025-09-06,Brownie,Sobremesa,Sudeste,1,11.50
+81,2025-09-07,X-Bacon,Lanche,Sul,5,29.90
+93,2025-09-08,Refrigerante,Bebida,Norte,4,6.90
+105,2025-09-09,Suco natural,Bebida,Nordeste,3,9.50
+117,2025-09-10,X-Burger,Lanche,Centro-Oeste,2,22.90
+129,2025-09-11,Batata frita,Acompanhamento,Sudeste,1,12.90
+141,2025-09-12,Milkshake,Sobremesa,Sul,5,16.90
+153,2025-09-13,Brownie,Sobremesa,Norte,4,11.50
+165,2025-09-14,X-Bacon,Lanche,Nordeste,3,29.90
+177,2025-09-15,Refrigerante,Bebida,Centro-Oeste,2,6.90
+189,2025-09-16,Suco natural,Bebida,Sudeste,1,9.50
+10,2025-10-01,Brownie,Sobremesa,Centro-Oeste,4,11.50
+22,2025-10-02,X-Bacon,Lanche,Sudeste,3,29.90
+34,2025-10-03,Refrigerante,Bebida,Sul,2,6.90
+46,2025-10-04,Suco natural,Bebida,Norte,1,9.50
+58,2025-10-05,X-Burger,Lanche,Nordeste,5,22.90
+70,2025-10-06,Batata frita,Acompanhamento,Centro-Oeste,4,12.90
+82,2025-10-07,Milkshake,Sobremesa,Sudeste,3,16.90
+94,2025-10-08,Brownie,Sobremesa,Sul,2,11.50
+106,2025-10-09,X-Bacon,Lanche,Norte,1,29.90
+118,2025-10-10,Refrigerante,Bebida,Nordeste,5,6.90
+130,2025-10-11,Suco natural,Bebida,Centro-Oeste,4,9.50
+142,2025-10-12,X-Burger,Lanche,Sudeste,3,22.90
+154,2025-10-13,Batata frita,Acompanhamento,Sul,2,12.90
+166,2025-10-14,Milkshake,Sobremesa,Norte,1,16.90
+178,2025-10-15,Brownie,Sobremesa,Nordeste,5,11.50
+190,2025-10-16,X-Bacon,Lanche,Centro-Oeste,4,29.90
+11,2025-11-01,Batata frita,Acompanhamento,Nordeste,2,12.90
+23,2025-11-02,Milkshake,Sobremesa,Centro-Oeste,1,16.90
+35,2025-11-03,Brownie,Sobremesa,Sudeste,5,11.50
+47,2025-11-04,X-Bacon,Lanche,Sul,4,29.90
+59,2025-11-05,Refrigerante,Bebida,Norte,3,6.90
+71,2025-11-06,Suco natural,Bebida,Nordeste,2,9.50
+83,2025-11-07,X-Burger,Lanche,Centro-Oeste,1,22.90
+95,2025-11-08,Batata frita,Acompanhamento,Sudeste,5,12.90
+107,2025-11-09,Milkshake,Sobremesa,Sul,4,16.90
+119,2025-11-10,Brownie,Sobremesa,Norte,3,11.50
+131,2025-11-11,X-Bacon,Lanche,Nordeste,2,29.90
+143,2025-11-12,Refrigerante,Bebida,Centro-Oeste,1,6.90
+155,2025-11-13,Suco natural,Bebida,Sudeste,5,9.50
+167,2025-11-14,X-Burger,Lanche,Sul,4,22.90
+179,2025-11-15,Batata frita,Acompanhamento,Norte,3,12.90
+191,2025-11-16,Milkshake,Sobremesa,Nordeste,2,16.90
+12,2025-12-01,Suco natural,Bebida,Norte,5,9.50
+24,2025-12-02,X-Burger,Lanche,Nordeste,4,22.90
+36,2025-12-03,Batata frita,Acompanhamento,Centro-Oeste,3,12.90
+48,2025-12-04,Milkshake,Sobremesa,Sudeste,2,16.90
+60,2025-12-05,Brownie,Sobremesa,Sul,1,11.50
+72,2025-12-06,X-Bacon,Lanche,Norte,5,29.90
+84,2025-12-07,Refrigerante,Bebida,Nordeste,4,6.90
+96,2025-12-08,Suco natural,Bebida,Centro-Oeste,3,9.50
+108,2025-12-09,X-Burger,Lanche,Sudeste,2,22.90
+120,2025-12-10,Batata frita,Acompanhamento,Sul,1,12.90
+132,2025-12-11,Milkshake,Sobremesa,Norte,5,16.90
+144,2025-12-12,Brownie,Sobremesa,Nordeste,4,11.50
+156,2025-12-13,X-Bacon,Lanche,Centro-Oeste,3,29.90
+168,2025-12-14,Refrigerante,Bebida,Sudeste,2,6.90
+180,2025-12-15,Suco natural,Bebida,Sul,1,9.50
+192,2025-12-16,X-Burger,Lanche,Norte,5,22.90

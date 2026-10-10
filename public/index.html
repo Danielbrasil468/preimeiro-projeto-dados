@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vendas em foco • Análise de dados</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/papaparse@5.5.3/papaparse.min.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <main>
+    <header class="topbar"><a class="brand" href="index.html"><span class="brand-icon">▥</span> Vendas em foco</a><span class="course">Fundamentos de IA e Análise de Dados</span></header>
+    <section class="heading"><div><p class="eyebrow">EXPLORAR · COMPARAR · APRENDER</p><h1>Uma visão clara das suas vendas.</h1><p class="subtitle">Explore o faturamento, compare resultados e descubra como os filtros mudam a análise.</p></div><label class="button primary" for="csv-file">Importar CSV<input id="csv-file" type="file" accept=".csv,text/csv"></label></section>
+    <section class="source-box" aria-label="Origem dos dados"><div><strong id="source-title">Dados demonstrativos · base fictícia</strong><p id="source-description">200 registros de janeiro a dezembro de 2025. Valores criados apenas para a atividade.</p></div><div class="source-actions"><button id="demo-button">Usar demonstração</button><button id="original-button">Analisar hamburgueria</button></div></section>
+    <p id="import-status" class="status" role="status" aria-live="polite"></p>
+    <section class="panel filters" aria-label="Filtros da análise">
+      <div class="section-title"><h2>Refine sua análise</h2><button id="clear-button" class="text-button">Limpar filtros</button></div>
+      <div class="filter-grid"><label>Data inicial<input id="start-date" type="date"></label><label>Data final<input id="end-date" type="date"></label><label>Categoria<select id="category"></select></label><label><span id="dimension-label">Região</span><select id="dimension"></select></label></div>
+    </section>
+    <div class="results-header"><h2>Resumo das vendas</h2><span id="record-count" role="status"></span></div>
+    <section class="metrics" aria-label="Indicadores"><article class="metric"><p>Faturamento total</p><strong id="revenue">—</strong><small>Soma da receita das linhas</small></article><article class="metric"><p>Quantidade de vendas</p><strong id="sales">—</strong><small>Identificadores únicos</small></article><article class="metric"><p>Unidades vendidas</p><strong id="units">—</strong><small>Soma das quantidades</small></article><article class="metric"><p>Ticket médio</p><strong id="ticket">—</strong><small>Receita por venda única</small></article></section>
+    <p id="empty-message" class="empty" hidden>Nenhum registro corresponde aos filtros. Altere o período ou limpe os filtros para continuar.</p>
+    <section class="charts" aria-label="Gráficos de faturamento"><article class="panel wide"><h2>Como o faturamento evoluiu?</h2><p class="chart-subtitle">Receita mensal · em reais (R$)</p><div class="chart-container"><canvas id="monthly-chart" role="img" aria-label="Faturamento por mês"></canvas></div></article><article class="panel"><h2>Quais categorias geram mais receita?</h2><p class="chart-subtitle">Faturamento por categoria · em reais (R$)</p><div class="chart-container"><canvas id="category-chart" role="img" aria-label="Faturamento por categoria"></canvas></div></article><article class="panel"><h2 id="dimension-chart-title">Como as regiões se comparam?</h2><p class="chart-subtitle" id="dimension-chart-subtitle">Faturamento por região · em reais (R$)</p><div class="chart-container"><canvas id="dimension-chart" role="img" aria-label="Faturamento por região ou canal"></canvas></div></article></section>
+    <section class="panel pie-panel" aria-label="Participação das categorias"><h2>Como o faturamento se divide?</h2><p class="chart-subtitle">Participação por categoria · passe sobre as fatias para ver valores e percentuais.</p><p id="pie-empty" class="table-note" hidden>Sem faturamento positivo para calcular a participação das categorias.</p><div class="chart-container"><canvas id="category-pie-chart" role="img" aria-label="Gráfico de pizza com a participação de cada categoria no faturamento filtrado"></canvas></div></section>
+    <div class="results-header"><h2>Hambúrgueres e bebidas</h2><span>Todos os gráficos acompanham os filtros</span></div>
+    <p class="table-note">Hambúrgueres: categoria Lanche ou Hambúrguer(es). Vendas contam IDs únicos; unidades somam as quantidades. Nordeste exige a coluna região.</p>
+    <section class="charts" aria-label="Análise de hambúrgueres e bebidas">
+      <article class="panel"><h2 class="burger-chart-text">Vendas semanais de hambúrgueres</h2><p class="chart-subtitle">Vendas únicas · semanas de segunda a domingo</p><p id="burger-weekly-note" class="table-note" role="status"></p><div class="chart-container"><canvas id="burger-weekly-chart" role="img" aria-label="Quantidade semanal de vendas únicas de hambúrgueres"></canvas></div></article>
+      <article class="panel"><h2 class="burger-chart-text">Faturamento mensal de hambúrgueres</h2><p class="chart-subtitle">Receita bruta · em reais (R$), sem descontar custos</p><p id="burger-monthly-note" class="table-note" role="status"></p><div class="chart-container"><canvas id="burger-monthly-chart" role="img" aria-label="Receita mensal de hambúrgueres"></canvas></div></article>
+      <article class="panel"><h2 class="burger-chart-text">Hambúrgueres vendidos no Nordeste</h2><p class="chart-subtitle">Unidades vendidas por produto</p><p id="burger-northeast-note" class="table-note" role="status"></p><div class="chart-container"><canvas id="burger-northeast-chart" role="img" aria-label="Unidades de hambúrgueres vendidas por produto no Nordeste"></canvas></div></article>
+      <article class="panel"><h2>Bebidas vendidas no Nordeste</h2><p class="chart-subtitle">Participação por produto · unidades e percentuais</p><p id="drink-northeast-note" class="table-note" role="status"></p><div class="chart-container"><canvas id="drink-northeast-chart" role="img" aria-label="Pizza de unidades de bebidas vendidas no Nordeste por produto"></canvas></div></article>
+    </section>
+    <section class="panel table-panel"><div class="section-title"><div><h2>Explore os registros</h2><p class="chart-subtitle">Clique nos títulos das colunas para ordenar.</p></div><button id="export-button">Exportar filtrados</button></div><label class="search-label">Pesquisar nos registros<input id="search" type="search" placeholder="Produto, categoria, local ou ID…"></label><p class="table-note">A pesquisa também atualiza indicadores, gráficos e exportação.</p><div class="table-scroll"><table><caption class="sr-only">Vendas filtradas; use os botões dos cabeçalhos para ordenar</caption><thead><tr id="table-head"></tr></thead><tbody id="table-body"></tbody></table></div><div class="pagination"><span id="page-info"></span><div><button id="previous-page">Anterior</button><button id="next-page">Próxima</button></div></div></section>
+    <section class="panel ranking-controls" aria-labelledby="february-title">
+      <div><h2 id="february-title">Itens vendidos em fevereiro</h2><p class="chart-subtitle">Até 5 produtos por gráfico · soma das unidades vendidas, considerando os filtros e a pesquisa.</p></div>
+      <label>Ano dos gráficos de fevereiro<select id="february-year"></select></label>
+    </section>
+    <section class="charts" aria-label="Itens mais e menos vendidos em fevereiro">
+      <article class="panel"><h2>Itens mais vendidos em fevereiro</h2><p class="chart-subtitle">Da maior para a menor quantidade de unidades</p><p id="february-most-note" class="table-note" role="status"></p><div class="chart-container"><canvas id="february-most-chart" role="img" aria-label="Cinco itens mais vendidos em fevereiro por unidades"></canvas></div></article>
+      <article class="panel"><h2>Itens menos vendidos em fevereiro</h2><p class="chart-subtitle">Da menor para a maior quantidade · somente produtos com registros no recorte</p><p id="february-least-note" class="table-note" role="status"></p><div class="chart-container"><canvas id="february-least-chart" role="img" aria-label="Cinco itens menos vendidos em fevereiro por unidades"></canvas></div></article>
+    </section>
+    <section class="panel heatmap-panel" aria-labelledby="heatmap-title">
+      <h2 id="heatmap-title">Mapa de calor · bebidas no Nordeste</h2>
+      <p class="chart-subtitle">Unidades vendidas por produto e mês · quanto mais escuro o lilás, maior a quantidade.</p>
+      <p id="heatmap-note" class="table-note" role="status"></p>
+      <div id="heatmap-content" class="table-scroll" tabindex="0" aria-label="Mapa de calor; role horizontalmente para explorar os meses">
+        <table class="heatmap-table"><caption class="sr-only">Unidades de bebidas vendidas no Nordeste por produto e mês</caption><thead id="heatmap-head"></thead><tbody id="heatmap-body"></tbody></table>
+      </div>
+      <div id="heatmap-legend" class="heatmap-legend"><span>Menos unidades</span><span class="heatmap-scale" aria-hidden="true"></span><span id="heatmap-maximum">Mais unidades</span><span>— Sem registros · 0 Quantidade zero registrada</span></div>
+      <p class="table-note">A escala é recalculada no recorte atual. Todos os filtros e a pesquisa se aplicam a este mapa.</p>
+    </section>
+    <section class="panel contact-panel" aria-labelledby="contact-title">
+      <div><h2 id="contact-title">Meios de contato</h2><p class="contact-name">Daniel Nardo</p></div>
+      <address><span>Telefone</span><a href="tel:+5519996359626" aria-label="Ligar para Daniel Nardo: (19) 99635-9626">(19) 99635-9626</a></address>
+    </section>
+    <footer><span>Aprenda com os dados. Investigue antes de concluir.</span><span>Faturamento = quantidade × preço unitário</span></footer>
+  </main>
+</body>
+</html>
